@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/L2ncE/go-brainfuck/brainfuck"
 	"net/url"
 )
 
@@ -13,6 +14,6 @@ func main() {
 
 	//If you want to translate Brainfuck encoding,
 	//you need to URL encode it first
-	text := brainfuck.Text2BrainFuck(url.QueryEscape(bf))
+	text := brainfuck.BrainFuck2Text(url.QueryEscape(bf))
 	fmt.Println(text)
 }
