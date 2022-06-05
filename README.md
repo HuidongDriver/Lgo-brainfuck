@@ -50,7 +50,7 @@ $ go get -u github.com/L2ncE/go-brainfuck
 2. Import in your code
 
 ```go
-import "github.com/L2ncE/go-brainfuck"
+import "github.com/L2ncE/go-brainfuck/brainfuck"
 ```
 
 ## Quick start
@@ -62,22 +62,23 @@ package main
 
 import (
   "fmt"
+  "github.com/L2ncE/go-brainfuck/brainfuck"
   "net/url"
 )
 
 func main() {
   str := "Hello World"
 
-  bf := Text2BrainFuck(str)
+  bf := brainfuck.Text2BrainFuck(str)
   fmt.Println(bf)
 
   //If you want to translate Brainfuck encoding,
   //you need to URL encode it first
-  text := BrainFuck2Text(url.QueryEscape(bf))
+  text := brainfuck.BrainFuck2Text(url.QueryEscape(bf))
   fmt.Println(text)
 }
-```
 
+```
 
 ## Other
 
