@@ -1,17 +1,13 @@
 package main
 
 import (
-	"fmt"
+	"io"
 	"io/ioutil"
 	"log"
 	"net/http"
-	"regexp"
-	"strings"
 )
 
-func main() {
-	client := &http.Client{}
-	var data = strings.NewReader(`input=00&do=Text+to+Brainfuck`)
+func Set(client *http.Client, data io.Reader) ([]byte, error) {
 	req, err := http.NewRequest("POST", "https://www.splitbrain.org/_static/ook/index.php", data)
 	if err != nil {
 		log.Fatal(err)
@@ -39,12 +35,5 @@ func main() {
 	}
 	defer resp.Body.Close()
 	bodyText, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		log.Fatal(err)
-	}
-	ret := regexp.MustCompile(`10">(?s:(.*?))</te`)
-	res := ret.FindString(string(bodyText))
-	trimStr := strings.Trim(res, "10\">")
-	trimStr = trimStr[:len(trimStr)-4]
-	fmt.Printf("%s", trimStr)
+	return bodyText, err
 }
