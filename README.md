@@ -6,9 +6,9 @@ Online conversion between `Go` and `Brainfuck`/Go语言与Brainfuck语言在线�
 
 - [go-brainfuck](#go-brainfuck)
     - [Catalog](#Catalog)
-    - [Special statement](#Special statement)
+    - [Special statement](#Special-statement)
     - [Install](#Install)
-    - [Quick start](#Quick start)
+    - [Quick start](#Quick-start)
     - [Other](#Other)
 
 ## Special statement
