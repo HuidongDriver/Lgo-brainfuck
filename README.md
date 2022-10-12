@@ -62,8 +62,9 @@ package main
 
 import (
   "fmt"
-  "github.com/L2ncE/go-brainfuck/brainfuck"
   "net/url"
+
+  "github.com/LgoLgo/Lgo-brainfuck/brainfuck"
 )
 
 func main() {
