@@ -1,10 +1,10 @@
-# go-brainfuck
+# Lgo-brainfuck
 
 Online conversion between `Go` and `Brainfuck`/Go语言与Brainfuck语言在线转换
 
 ## Catalog
 
-- [go-brainfuck](#go-brainfuck)
+- [Lgo-brainfuck](#Lgo-brainfuck)
     - [Catalog](#Catalog)
     - [Special statement](#Special-statement)
     - [Install](#Install)
@@ -44,13 +44,13 @@ carefully***
 1. You need a development environment for [Go](https://golang.org/), You can install Gin with the following Go command
 
 ```sh
-$ go get -u github.com/L2ncE/go-brainfuck
+$ go get -u github.com/LgoLgo/Lgo-brainfuck
 ```
 
 2. Import in your code
 
 ```go
-import "github.com/L2ncE/go-brainfuck/brainfuck"
+import "github.com/LgoLgo/Lgo-brainfuck/brainfuck"
 ```
 
 ## Quick start
